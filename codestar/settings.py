@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 #Added your URL to the allowed_hosts (In the error message from 22/Feb/2024 12:34:01)
 ALLOWED_HOSTS = ['8000-andyjamesos-djangobloga-vq437h65lhl.ws-eu108.gitpod.io','.herokuapp.com']
