@@ -27,9 +27,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['8000-andyjamesos-djangobloga-8fksbavm698.ws-eu108.gitpod.io','.herokuapp.com']
+#Added your URL to the allowed_hosts (In the error message from 22/Feb/2024 12:34:01)
+ALLOWED_HOSTS = ['8000-andyjamesos-djangobloga-vq437h65lhl.ws-eu108.gitpod.io','.herokuapp.com']
 
 
 # Application definition
@@ -89,11 +90,11 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
+#Changed your trusted origins to the herokuapp & Gitpod as hosts. 12:36 22/02/24
 CSRF_TRUSTED_ORIGINS = [
-    "https://8000-andyjamesos-djangobloga-8fksbavm698.ws-eu108.gitpod.io.codeanyapp.com",
     "https://*.herokuapp.com",
-    
-]
+    "https://*.gitpod.io",
+ ]
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
